@@ -13,9 +13,19 @@ const router = createRouter({
       component: HomeView,
     },
     {
+      path: "/acessorios",
+      name: "acessorios",
+      component: AcessorioView,
+    },
+    {
       path: "/categorias",
       name: "categorias",
       component: CategoriaView,
+    },
+    {
+      path: "/cores",
+      name: "cores",
+      component: CorView,
     },
     {
       path: "/login",
