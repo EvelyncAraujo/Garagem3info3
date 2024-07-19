@@ -1,11 +1,11 @@
 <script setup>
 import { ref, reactive, onMounted } from "vue";
-import coresApi from "@/api/cores";
-const coresApi = new coresApi();
+import CoresApi from "@/api/cores";
+const coresApi = new CoresApi();
 
 const defaultcor = { id: null, descricao: "" };
 const cores = ref([]);
-const cores = reactive({ ...defaultcor });
+const cor = reactive({ ...defaultcor });
 
 onMounted(async () => {
   cores.value = await coresApi.buscarTodasAscores();

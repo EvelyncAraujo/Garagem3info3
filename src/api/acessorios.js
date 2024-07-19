@@ -14,7 +14,7 @@ async atualizarAcessorio(acessorio){
     return data.results
 }
 async excluirAcessorio(id){
-    const {data} = await axios.delete('/acessorios/${id}');
+    const {data} = await axios.delete(`/acessorios/${id}`);
     return data.results
 }
 }
